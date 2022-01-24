@@ -14,4 +14,11 @@ func main() {
 	fmt.Println(a)
 	fmt.Println("len: ", len(a)) //<--length
 
+	a["d"] = 55
+	fmt.Println(a)
+	fmt.Println("len: ", len(a)) //<--length
+
+	for k, v := range a {
+		fmt.Printf("key: %s, value: %v \n", k, v)
+	}
 }

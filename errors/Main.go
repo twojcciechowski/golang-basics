@@ -13,22 +13,26 @@ func main() {
 		fmt.Printf("func1() nie działa bo: %s \n", err)
 	}
 
-	//if err := func3(); errors.Is(err, ERR_WRONG) {
-	//	fmt.Printf("%v \n", err.Error())
-	//
-	//	a := errors.Unwrap(err)
-	//	fmt.Printf("%v \n", a.Error())
-	//
-	//	b := errors.Unwrap(a)
-	//	fmt.Printf("%v \n", b.Error())
-	//}
+	if err := func3(); errors.Is(err, ERR_WRONG) {
+		fmt.Printf("%v \n", err.Error())
+
+		a := errors.Unwrap(err)
+		fmt.Printf("%v \n", a.Error())
+
+		b := errors.Unwrap(a)
+		fmt.Printf("%v \n", b.Error())
+	}
 
 }
 
 func func3() error {
 
 	if err := func2(); err != nil {
-		return fmt.Errorf("func2() does not work: %w", err)
+		return fmt.Errorf("IP address not available : %w", err)
+	}
+
+	if err := func1(); err != nil {
+		return fmt.Errorf("IP address not available : %w", err)
 	}
 
 	return nil
@@ -37,7 +41,7 @@ func func3() error {
 func func2() error {
 
 	if err := func1(); err != nil {
-		return fmt.Errorf("func1() does not work: %w", err)
+		return fmt.Errorf("db conn does not work: %w", err)
 	}
 
 	return nil

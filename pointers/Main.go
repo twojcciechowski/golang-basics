@@ -1,33 +1,59 @@
 package main
 
-import "fmt"
-
-func updateIntA(number *int) {
-	*number = *number * 2
-}
-
-func updateIntB(number *int) {
-	b := 10
-	number = &b
-}
-
-func updateIntC(number *int) *int {
-	b := 10
-	return &b
-}
+//func updateIntA(number *int) {
+//	*number = *number * 2
+//}
+//
+//func updateIntB(number *int) {
+//
+//	println("address of number: ", &number)
+//	b := 10
+//	number = &b
+//
+//}
+//
+//func updateIntC(number *int) *int {
+//	b := 10
+//	return &b
+//}
 
 func main() {
 
-	a := 1
+	//var a byte
+	//fmt.Printf("original value : %d \n", a)
 
-	fmt.Printf("%d", a)
+	//a := 'a'
+	//b := "s"
+	//fmt.Printf("type of a: %s \n", reflect.TypeOf(a))
+	//fmt.Printf("type of b: %s \n", reflect.TypeOf(b))
+
+	//var a int
+	//a = 1
+	//
+	//fmt.Printf("original value : %d \n", a)
+	//
+	//s := strconv.Itoa(a)
+	//fmt.Printf("modified value : %s \n", s)
+	//fmt.Printf("modified type : %s \n", reflect.TypeOf(s))
+	//
+	//val, _ := strconv.Atoi("9999")
+	//
+	//fmt.Printf("modified value : %d \n", val)
+	//fmt.Printf("modified value : %s \n", reflect.TypeOf(val))
+
+	//a := 1
+	//
+	//fmt.Printf("original value : %d \n", a)
 
 	//updateIntA(&a)
-	//fmt.Printf("%d", a)
+	//fmt.Printf("return value: %d \n", a)
+
+	//pa := &a
+	//println("address of a", &pa)
 
 	//updateIntB(&a) //does not work why??
-	//fmt.Printf("%d", a)
+	//fmt.Printf("return value: %d", a)
 
-	//fmt.Printf("%d", *updateIntC(&a))
+	//fmt.Printf("return value: %d", *updateIntC(&a))
 
 }

@@ -1,10 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
+
 	x, s := f1()
 	//x, s := f2()
 	fmt.Println("x=", x)

@@ -9,9 +9,9 @@ const (
 )
 
 const (
-	B1 = iota + 10
-	B2
-	B3
+	B1 = iota - 1
+	B2 = iota
+	B3 = iota + 4
 )
 
 func main() {
