@@ -7,18 +7,18 @@ func main() {
 	//Arrays
 	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9} //array
 
-	//fmt.Println("----- example arrays 1 -----")
-	//
-	//fmt.Println(a)
-	//fmt.Println("cap: ", cap(a)) //<--capacity
-	//fmt.Println("len: ", len(a)) //<--length
-	//
-	//fmt.Println("----- example arrays 2 -----")
-	//a = append(a, 10)
-	//
-	//fmt.Println(a)
-	//fmt.Println("cap: ", cap(a)) //<--capacity
-	//fmt.Println("len: ", len(a)) //<--length
+	fmt.Println("----- example arrays 1 -----")
+
+	fmt.Println(a)
+	fmt.Println("cap: ", cap(a)) //<--capacity
+	fmt.Println("len: ", len(a)) //<--length
+
+	fmt.Println("----- example arrays 2 -----")
+	a = append(a, 10)
+
+	fmt.Println(a)
+	fmt.Println("cap: ", cap(a)) //<--capacity
+	fmt.Println("len: ", len(a)) //<--length
 
 	//Slices
 
